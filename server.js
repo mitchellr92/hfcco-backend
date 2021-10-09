@@ -14,6 +14,7 @@ app.use(cors());
 app.get("/", (req, res) => res.json({ msg: "HFCCO API..." }));
 
 // Define routes
+app.use("/api/users", require("./routes/user"));
 
 const PORT = process.env.PORT || 5000;
 
